@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z-Index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            /* visibility: hidden;---> Element will be hidden but its place will be reserved
+            display: none;---> To free element's place */
+            background-color: aqua;
+            position: relative;
+            top: 40px;
+            z-index: 35px;
+            /*if an element's z-index > than other element, it will get stacked on top of it. If the other element is required to be on top increase it's z-index*/
+        }
+        #box2{
+            background-color: rgb(0, 68, 68);
+            position: relative;
+            /* z-index: will only work for position relative,fixed,sticky,float or absolute; */
+            top: -54px;
+            z-index: 10px;
+        }
+        #box3{
+            background-color: aquamarine;
+        }
+        #box4{
+            background-color: rgb(1, 120, 80);
+        }
+    </style>
+</head>
+<body>
+  <div class="box" id="box1"></div><!--$ means 1,2,3.....n-->
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+</body>
+</html>

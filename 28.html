@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After Pseudo Selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(0, 25, 25);
+            color: azure;
+            margin: 0;
+            padding: 0;
+        }
+
+        header::before {
+            background-image: url(https://wallpaper.dog/download-wallpaper/5557995_coding);
+            content: "";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            /*to stack the text on the image*/
+            opacity: 0.7;
+            /*to increase the transparency of the bg image*/
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        .navigation {
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            display: flex;
+            border-radius: 5px;
+        }
+
+        section {
+            height: 345px;
+            margin: 5px 23px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: larger;
+            color: white;
+            font-family: cursive;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 4rem;
+        }
+
+        .navigation li:hover {
+            text-decoration: underline;
+            color: rgb(40, 40, 213);
+            font-size: larger;
+        }
+
+        .navigation a {
+            text-decoration: none;
+        }
+
+        /* section::before{
+    content: "Hello There Coder!";
+    font-size: 15px;
+} */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"> <a href="#" class="active"> Home</a></li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Reach us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, suscipit maiores rerum iusto eveniet
+            assumenda adipisci consequatur architecto laborum alias corporis dicta, laboriosam beatae vero, asperiores
+            eius et. Soluta asperiores quisquam eos voluptas animi ullam voluptates laudantium tempore quod sapiente!
+        </p>
+    </section>
+</body>
+
+</html>

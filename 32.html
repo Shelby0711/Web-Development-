@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        #box {
+            color: aliceblue;
+            background-color: rgb(46, 192, 143);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            border: 2px solid crimson;
+            /* background-color: rgb(25, 133, 137);
+            transition-property: background-color;
+            transition-duration: 1s; */
+            transition: all 1s ease-out .2s;
+            /*transition property,transition duration,transition-timing-fn,transition delay*/
+        }
+
+        #box:hover{
+            background-color: rgb(10, 37, 39);
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is CSS Transitions Basics</h2>
+    <div id="box">
+        This is a Box
+    </div>
+</body>
+
+</html>

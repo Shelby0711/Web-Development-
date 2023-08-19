@@ -1,0 +1,5 @@
+> *Flexbox* is a one-dimensional layout method for laying out items in rows or columns.
+> CSS flexbox is a betteer way to aign items into a container.
+> Flexbox = flexible + box.
+> A Flex container  can be made to store multiple flex items.
+> When elements are laid out as flexible boxes, they are laid out along two axes.

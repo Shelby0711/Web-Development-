@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9e2f85ac7.js" crossorigin="anonymous"></script>
+    <title>University Web Design</title>
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="Pro4.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Pro4.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="abt-col">
+                <h1>We Are UP's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque eos at aliquid vel doloribus
+                    nisi, eum quidem veniam ullam impedit autem magni aperiam architecto provident asperiores possimus
+                    tempora, aspernatur quibusdam, necessitatibus aut qui? Mollitia quam, aliquam facere neque voluptas,
+                    illo nulla ratione porro soluta autem dolorem tempora voluptatem consequuntur!</p>
+                <a href="Pro4.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+
+            <div class="abt-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Bahraich Eduford University has been established recently in 2030 and is NAAC++ acredited, UGC Approved and
+            is featured in Times India's "50 Best Private Universities in India".</p> <br>
+        <h2>Our Founders:</h2>
+        <strong>Mr.Vaibhav Tiwari</strong><br>
+        <span>(Uni Founder, Writer, Filmaker)</span> <br>
+        <strong>Mr.Adnan Beg</strong><br>
+        <span>(Uni Co-founder, Uni Principle, Entrepreneur)</span> <br>
+        <strong>Dr.Shivanand Mishra</strong><br>
+        <span>(Uni Co-founder, Head of Medical Department)</span>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p class="icons1">Made with <i class="fa fa-heart-o"></i> by Gatito.Virus</p>
+    </section>
+
+    <!-- JS For toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

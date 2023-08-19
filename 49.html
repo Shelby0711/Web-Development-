@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <!-- An event is an signal that informs about an action -->
+</head>
+<style>
+    #btn{
+        margin: 5px;
+        padding:5px 10px;
+        border: 1px solid crimson;
+        border-radius: 5px;
+        color: aliceblue;
+        background-color: crimson;
+        transition: .5s;
+        cursor: pointer;
+    }
+    #btn:hover{
+        color: crimson;
+        background-color: aliceblue;
+        border: 1px solid tomato;
+    }
+</style>
+<body>
+    <!-- Browser Events:
+    click
+    contextmenu
+    mouseover/out
+    mousedown/up
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitioned -->
+    <div id="cont">
+        <h1>Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, laborum officiis magni, dolores aliquam fuga eum rerum libero animi corrupti asperiores ipsa minus ab mollitia reiciendis soluta? Nam praesentium magnam ut fuga autem in unde odio quos eveniet optio debitis facere, deserunt eligendi ullam, nesciunt molestiae quo quas nostrum. Unde.</p>
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo quod ab recusandae error temporibus reiciendis ipsam aliquid beatae numquam, nostrum nesciunt cumque excepturi possimus deserunt dolor quam minima neque aliquam natus expedita ratione explicabo? Distinctio delectus nulla soluta excepturi et! Odit deleniti est veritatis modi. Dolorum beatae, ipsum animi dolorem veniam vitae quae nihil odio quibusdam tenetur laboriosam soluta quisquam numquam eaque in fugit dicta suscipit cumque eum laborum. Ab doloremque delectus fugit ullam veritatis sed modi impedit minus.</p>
+    </div>
+    <!-- Following is a example of OnClick event -->
+    <button id="btn" onclick="more()">More</button>
+    <button id="btn" onclick="less()">Less</button>
+    <script>
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+                console.log('Mouse Inside');
+        });
+        let para1 = document.getElementById('para1');
+        para.addEventListener('mouseout',function run(){
+                console.log('Mouse Outside');
+        });
+
+
+        para1.style.display = 'none'
+        function more(){
+        //  let btn = document.getElementById('btn');
+        //  let para = document.getElementById('para');
+        //     if(para.style.display != 'none'){
+        //         para.style.display = 'none';
+        //     }
+        //     else{
+        //         para.style.display = 'block';
+        //     }
+        // 
+        let btn = document.getElementById('btn')
+        let para = document.getElementById('para')
+        let para1 = document.getElementById('para1')
+        para1.style.display = 'block'
+    }
+
+    function less(){
+        let btn = document.getElementById('btn')
+        let para = document.getElementById('para')
+        let para1 = document.getElementById('para1')
+        para1.style.display = 'none'
+    }
+    </script>
+</body>
+</html>

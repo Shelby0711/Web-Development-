@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .container {
+            background-color: aqua;
+            height: 3500px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid rgb(56, 56, 56);
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        /*CSS positions: satatic(default),absolute,relative,fixed,sticky*/
+        #box3 {
+            /* relative to its normal position and will leave a gap at it's normal position*/
+            /* position: relative; */
+            /* top: 34px;
+            left: 34px; */
+
+            /* relative to its first parent position(here 'container') */
+            /* position: absolute; */
+
+            /* Element will stay at it's place*/
+            /* position: static; */
+
+            /* element will not move from it's position, it is relative to the browser window */
+            /* position: fixed;
+            right: 4px;
+            bottom: 4px; */
+
+            /*Gets sticked to the defined positiion*/
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">Chat With us</div>
+        <div id="box4" class="box">4</div>
+
+    </div>
+</body>
+
+</html>

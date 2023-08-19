@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Variables</title>
+    <style>
+:root{/*variables declared here are Global variables they can be used anywhere in the programme*/
+    --primary-color: rgb(153, 68, 82);
+    --secondary-color: rgb(14, 157, 157);
+    --max-w:500px;
+}
+
+        .box {
+            --box-color: rgba(73, 175, 141, 0.832);
+            /*a custom Local variable of box can only be used for box*/
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            /*var() is used to apply the custom variables*/
+            border: 2px solid red;
+            border-radius: 5px;
+            box-shadow: 3px 4px 5px var(--primary-color);
+            margin: 5px 15px;
+        }
+
+        .container {
+            max-width: var(--max-w);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

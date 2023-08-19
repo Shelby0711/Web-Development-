@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Elements</title>
+    <!-- DOM Document Object Model--> 
+</head>
+<body>
+    <div class="cont" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        let main = document.getElementById('main')
+        console.log(main)
+        let nav = document.getElementById('nav')
+        console.log(nav)
+
+        let container = document.getElementsByClassName('container')
+        console.log(container)
+
+        // Gives the first matching Element
+        // let sel = document.querySelector('#nav')
+        // console.log("Selector returns: ", sel)
+
+        // Gives all the matching Element
+        let sel = document.querySelectorAll('#nav>li')//'>' used to select a deeper element.
+        console.log("Selector returns: ", sel)
+        sel[0].innerHTML = "Inserted"//can be used to manipulate any element.
+        console.log(sel[0])
+    </script>
+</body>
+</html>

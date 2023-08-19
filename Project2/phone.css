@@ -1,0 +1,108 @@
+/*Nav Section*/
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: small;
+    padding: 0px 0px;
+
+}
+#navbar ul li {
+    font-size: small;
+    padding: 40px 10px;
+
+}
+
+/*Home Section*/
+#home{
+height: 300px;
+flex-direction: column;
+padding: 20px 50px;
+}
+
+#home .primary{
+    font-size: large;
+}
+
+.primary p{
+    font-size: small;
+}
+
+/*Projects Section*/
+
+#proj{
+    flex-direction: column;
+}
+
+#proj h2{
+font-size: larger;
+}
+
+#proj p{
+    flex-direction: column;
+    padding: 30px 30px;
+    font-size: medium;
+}
+
+#proj img{
+    padding-left: 5px;
+    height: 400px;
+    width: 340px;
+}
+#proj2 img{
+    padding-left: 5px;
+    height: 400px;
+    width: 340px;
+}
+
+#proj2{
+    flex-direction: column;
+}
+
+#proj2 p{
+   flex-direction: column;
+   padding: 30px 30px;
+   font-size: medium;
+}
+
+/*Arts Section*/
+
+#art-1{
+    flex-direction: column;
+}
+
+.box{
+    height: 720px;
+    width: 1000px;
+}
+
+.concept-container h1{
+    font-size: larger;
+}
+
+/*Partners Section*/
+
+.pbox img{
+    padding-left: 0px 10px;
+}
+
+/*Owner Section*/
+
+.owners{
+    font-size: medium;
+}
+#ab2 h2{
+font-size: larger;
+}
+
+/*About Section*/
+
+#about p{
+    font-size: medium;
+    flex-direction: column;
+}
+
+#about h1{
+    font-size: larger;
+}

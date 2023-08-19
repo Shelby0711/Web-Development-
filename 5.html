@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is Forms</h2>
+    <form action="backend.php"><!--this tells the code to store the form data in the specified backend.-->
+        <div><label for="Eligibility">Are you Eligible?:</label>
+            <input type="checkbox" name="myEligibility" id="Eligibility">
+        </div><br>
+        <div>Name:<input type="Text" name="myName"></div>
+        <br><!--name *attribute* helps the backend to recognise a tag-->
+        <div>Gender:<input type="radio" name="myGender"> Male <input type="radio" name="myGender"> Female <input
+                type="radio" name="myGender"> Mistake</div><br>
+        <div><label for="Role"> Role:</label>
+            <input type="text" name="myRole" id="Role">
+        </div><br>
+        <div>Email: <input type="email" name="myEmail"></div><br>
+        <div>DOB:<input type="date" name="myDate"></div><br>
+        <div>Experience(in Years): <input type="number" name="myExp"></div><br>
+        <div>Write something about Yourself:<br><textarea name="myText" cols="90" rows="10"></textarea></div><br>
+        <div><label for="Occupation"> Occupation:</label>
+            <select name="myOcc" id="Occupation">
+                <option value="std" selected>Student</option>
+                <option value="emp">Employed</option>
+                <option value="semp">Self-Employed</option>
+                <option value="uemp">Un-employed</option>
+                <option value="nota">Not specified</option>
+            </select><br>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+    </form>
+</body>
+
+</html>

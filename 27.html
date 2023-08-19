@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth Pseudo selectors</title>
+    <style>
+        .container {
+            padding: 25px 35px;
+            display: block;
+            width: 235px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            /*targets input with type text*/
+            padding: 25px;
+            border: 2px solid cyan;
+        }
+
+        a[target] {
+            /*If needed to target _blank specificaly=> [target='_blank']*/
+            color: aquamarine;
+            font-size: 50px;
+        }
+
+        li:nth-child(3) {
+            /*n+2 i.e, if want to apply on first child then will 1+2=3*/
+            color: thistle;
+        }
+
+        li:nth-child(2n+0) {
+            /*every second/alternative child*/
+            color: rgb(2, 179, 179);
+        }
+
+        li:nth-child(odd) {
+            background-color: brown;
+        }
+
+        li:nth-child(even) {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> <a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="text" placeholder="Enter your Password">
+            <input type="submit" value="submit">
+        </form>
+        <li class="item" id="item-1">Item1</li>
+        <li class="item" id="item-2">Item2</li>
+        <li class="item" id="item-3">Item3</li>
+        <li class="item" id="item-4">Item4</li>
+        <li class="item" id="item-5">Item5</li>
+    </div>
+</body>
+
+</html>

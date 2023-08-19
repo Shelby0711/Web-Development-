@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+
+            height: 550px;
+            width: 100%;
+            border: 2px solid black;
+            /*initializes the container as a flex box*/
+            display: flex;
+            /*the elements will automatically get arranged horizontly*/
+
+            /*Flex container properties:*/
+            /* flex-direction: column; */
+            /*elements will be arranged in columns*/
+            /* flex-direction: row-reverse; */
+            /*elements will be arranged in rows but in reversed order*/
+            /* flex-direction: row; */
+            /*nothing will happen as the direction is by default row*/
+            /*the code written afterwards overwrites the code above it if they both are targetting the same elements(s)*/
+            /*flex-wrap: wrap;Elements will get arranged according to the screen size.*/
+            /* flex-flow: row wrap; */
+            /*sets the direction and wrap together*/
+
+            /* justify-content: will justify the contents in horizontal direction; */
+            /*justify-content:center;aligns the elements to the center*/
+            /*justify-content: space-between;gives spaces *between* the elements*/
+            /*justify-content: space-evenly;gives spaces to the elements*/
+            /*justify-content: space-around;gives apaces around the elements*/
+
+            /* align-items: will align the items in vertical direction;*/
+            /*align-items: center;aligns the items to the center but verticaly*/
+            /*align-items: flex-end;aligns the items to the bottom*/
+            /* align-items: flex-start; */
+            /*default value aligns to the top*/
+            /* align-items: stretch; */
+            /*when the screen size is squeezed the elements get wrapped but they leave an even space between them*/
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid red;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        /* flex properties for flex items */
+        #item1{
+            order: 0;/* Higher the order, later it shows up in the container */
+            /* flex-grow: 3;when screen is stretched it will also stretch horizontaly by a faster pace than the other elements */
+        }
+
+        #item2 {
+            /*negative numbers are invalid for flex-grow*/
+            /* flex-grow: 5;*/
+            /* flex-basis: 300px; */
+            /*when the flex direction is set to row flex-basis: will control width*/
+            /*when the flex direction is set to column flex-basis: will control height*/
+            flex: 2 5 3px;/*this can be used to set flex-grow/shrink/basis altogether*/
+        }
+
+        #item3 {
+            flex-shrink: 3;/*opposite of flex-grow*/
+            align-self: flex-end;/*bottom*/
+            align-self: flex-start;/*top*/
+            align-self: center; /*center*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Flexbox Basics</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+    </div>
+</body>
+
+</html>

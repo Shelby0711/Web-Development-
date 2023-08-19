@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+.container{
+    display: flex;
+}
+
+.card{
+    background-color: rgb(199, 169, 132);
+    padding: 23px 3px;
+    /* border: 2px solid tomato; */
+    margin: 23px 12px;
+    text-align: center;
+    box-shadow: 10px 12px greenyellow;/*side shadow, below shadow, color*/
+    box-shadow: -10px -12px cyan;/*To provide shadow on top use negative parameters*/
+    box-shadow: 12px 15px 55px teal;/*third parameter blurs the shadow. side shadow, below shadow,blur radius, color*/
+    box-shadow:12px 15px 30px 15px rgba(14, 112, 112, 0.498) ;/*fourth parameter spreads the shadow. side shadow, below shadow,blur radius,spread radius, color*/
+    box-shadow: inset 3px 5px green;/*to provide shadow behind an element*/
+    box-shadow:10px 10px 30px 15px rgba(5, 141, 141, 0.498) , -10px -12px 10px cyan;
+    /*we can use ',' to provide multiple shadows*/
+}
+
+.card h2{
+    text-shadow: 1px 1px aqua ;/*horizontal,vertical,color*/
+    /*negative parameters works same as box shadow*/
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="card" id="card-1">
+        <h2>Card 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam asperiores sapiente eos accusantium dolor, rerum voluptatibus magnam molestiae saepe veniam hic deleniti aspernatur tempora? Itaque aperiam numquam facilis quam?</p>
+    </div>
+    <div class="card" id="card-2">
+        <h2> Card 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia culpa maxime quam sunt maiores in, porro voluptatem distinctio laudantium quod explicabo quidem voluptatum, quibusdam nisi error quas nemo repellat!</p>
+    </div>
+    <div class="card" id="card-3">
+        <h2> Card 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquid, hic nesciunt et suscipit qui quibusdam, nobis repudiandae, ea vitae est libero! Adipisci inventore consectetur asperiores facere beatae placeat iste.</p>
+    </div>
+</div>
+</body>
+
+</html>

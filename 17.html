@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet" href="17.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: rgb(162, 251, 221);
+            width: 900px;
+            border: solid;
+            border-color: 4px solid rgb(68, 67, 67);
+            margin: auto;
+            /*Automatically adjusts an element to the center*/
+        }
+
+        .item {
+            border: 2px solid grey;
+            margin: 12px 3px;
+            padding: 25px;
+            background-color: rgb(196, 245, 245);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            clear: left;
+            width: 100%;
+        }
+
+        h2 {
+            padding-left: 155px;
+            margin: auto;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Alignment in CSS</h2>
+
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Quisquam labore
+                unde provident deserunt nemo repellat voluptas dolorem? Ullam, voluptatem Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. At odio magnam nesciunt hic necessitatibus nisi iusto, reiciendis labore
+                officia exercitationem doloremque distinctio iure repellendus, id minus alias reprehenderit? Nesciunt
+                cumque ut reiciendis itaque ex!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Quisquam labore
+                unde provident deserunt nemo repellat voluptas dolorem? Ullam, voluptatem Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Dolore eligendi molestias dicta eveniet ad veniam quis consequuntur harum
+                sapiente tempora quaerat beatae, placeat, laborum, temporibus voluptates nostrum dolorem culpa
+                necessitatibus? Quis repellat modi dolore.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="statipara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Quisquam labore
+                unde provident deserunt nemo repellat voluptas dolorem? Ullam, voluptatem a.</p>
+        </div>
+    </div>
+</body>
+
+</html>

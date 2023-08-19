@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9e2f85ac7.js" crossorigin="anonymous"></script>
+    <title>University Web Design</title>
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="Pro4.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Pro4.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+<h1>Our Courses</h1>
+    </section>
+    
+    <section class="course">
+        <h1>Courses We Provide</h1>
+        <p>We thrive to provide the latest,relevant and most demanding courses to our students to equip them with top
+            class knowledge for their future ventures.</p>
+
+        <div class="row">
+            <div class="col">
+                <h3>Intermediate</h3>
+                <p>Students can choose Three Major subjects as per their stream of choice and Two Minor subjects from
+                    the large varities of minor subjects we offer.</p>
+            </div>
+            <div class="col">
+                <h3>Under-Graduate</h3>
+                <p>We offer the latest UG courses with best equipments, highly qualified and knowledgeable Tutors and a
+                    wide variety of specialisations to choose from.</p>
+            </div>
+
+            <div class="col">
+                <h3>Post-Graduate</h3>
+                <p>We offer the latest PG courses with best equipments, highly qualified and knowledgeable Tutors and a
+                    wide variety of specialisations to choose from. We heavily focus on practice based learning opposed
+                    to the traditional textbook learning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h3>About Us:</h3>
+        <p>Bahraich Eduford University has been established recently in 2030 and is NAAC++ acredited, UGC Approved and
+            is featured in Times India's "50 Best Private Universities in India".</p> <br>
+        <h2>Our Founders:</h2>
+        <strong>Mr.Vaibhav Tiwari</strong><br>
+        <span>(Uni Founder, Writer, Filmaker)</span> <br>
+        <strong>Mr.Adnan Beg</strong><br>
+        <span>(Uni Co-founder, Uni Principle, Entrepreneur)</span> <br>
+        <strong>Dr.Shivanand Mishra</strong><br>
+        <span>(Uni Co-founder, Head of Medical Department)</span>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p class="icons1">Made with <i class="fa fa-heart-o"></i> by Gatito.Virus</p>
+    </section>
+
+    <!-- JS For toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

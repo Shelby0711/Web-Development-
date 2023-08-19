@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more selectors</title>
+    <style>
+.container{
+    border: 2px solid red;
+    background-color: cornsilk;
+    padding: 34px;
+    margin: 34px auto;
+    width: 666px;
+}
+a{/*link properties*/
+    text-decoration: none;
+    color: black;
+}
+a:hover{/*Effects when the cursor is hovering at the link*/
+    color: blue;
+    background-color: rgb(208, 7, 7);
+}
+a:visited{/*Effects after visiting a link*/
+    color: purple;
+    background-color: cyan;
+}
+
+.btn{/*Button properties*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(249, 61, 98);
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn:hover{/*effects when the cursor is hovering at the button*/
+    border: 1px solid black;
+    color: cadetblue;
+    background-color: rgb(250, 25, 70);
+}
+    </style>
+</head>
+<body>
+    <div id="con1" class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facilis consequatur quibusdam veritatis voluptatum ipsam ut quis similique reiciendis magnam illo magni perspiciatis ex architecto saepe dignissimos explicabo dolore alias sint, esse earum! Harum.</p>
+
+        <a href="https://youtube.com/shorts/HTJBQN-InOU?feature=share" target="_blank" class="btn">Contact Us</a>
+        <button class="btn">Read More</button>
+    </div>
+</body>
+</html>

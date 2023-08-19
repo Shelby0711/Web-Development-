@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+    <style>
+        /* Fonts that are pre-installed in a system are called Web Safe fonts. */
+        /* Fonts that we have to import for using are called Web fonts. */
+        p {
+            font-family: cursive;
+        }
+
+        #webf {
+            font-family: 'Smokum';
+            font-size: 30px;
+            /*A pixel is an 1/9 of an inch*/
+            line-height: 1.3em;/*Distance between two groups of fonts*/
+        }
+        span{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Fonts</h2>
+    <p>There are many things one can do with fonts with the help of CSS. This is an example of <span>Web Safe Fonts</span></p>
+    <p id="webf">This is an example of Web fonts.</p>
+</body>
+
+</html>
